@@ -8,7 +8,7 @@ require_relative 'lib/move'
 
 # pro vývojové prostředí
 SinatraGeneral.set :port, 3001
-SinatraGeneral.set :nesselsburg_origin, 'http://localhost:3000'
+# SinatraGeneral.set :nesselsburg_origin, 'http://localhost:3000'
 
 SinatraGeneral.set :identity, {}
 SinatraGeneral.train_for 'kerkel', KerkelGame

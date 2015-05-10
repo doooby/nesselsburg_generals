@@ -22,7 +22,8 @@ class SinatraGeneral < Sinatra::Application
   error { |e| json general_fail: {message: e.message, backtrace: e.backtrace} }
   set :show_exceptions, false
   set :run, false
-  set :nesselsburg_origin, 'http://www.nesselsburg.cz'
+  #set :nesselsburg_origin, 'http://www.nesselsburg.cz'
+  set :nesselsburg_origin, 'http://young-beach-3305.herokuapp.com'
 
   options('/*') { 200 } # CORS requirement
 
